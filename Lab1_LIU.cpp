@@ -1,6 +1,5 @@
-/*
-Susan Liu
-Aug 27th, 2025
+
+
 LAB1: iostream
 */
 // C++ library
