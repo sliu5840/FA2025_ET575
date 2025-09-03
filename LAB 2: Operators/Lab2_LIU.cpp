@@ -27,8 +27,8 @@ int main()
     //print results
     cout << "The height of the free fall object is " <<height<< " meters." << endl;
     cout<<""<< endl;
-    
     */
+
     cout <<"------- Example 2: Assignment Operators -------" << endl;
     int number1 = 10, number2 = 3;
     cout<< "Original number1 = " <<number1<< endl;
@@ -56,6 +56,20 @@ int main()
     cout<<"Is number1 greater than number2? "<< (number1 > number2)<<endl;
     cout<<"Is number1 less than number2? " <<(number1 < number2)<<endl;
     cout<<"Is number1 not equal to number2? " << (number1 != number2)<< endl;
+    
+
+    cout <<"------- Example 4: Logic Operators -------" << endl;
+    //AND operator
+    bool check_and = (number1 != number2) && (number1 < number2) && (number1 > 5);
+    // number1 != number2 --> true;;;;;; number1 < number2 --> true;;;;;;; number1 > 5 --> false
+    // true && true && false --> false
+    cout<<"The result of check_and is "<<check_and<< endl;
+    //OR operator
+    bool check_or = (number2 != 3) || (number2 > 10) || (number2 < number1);
+    //number2 != 3 --> true;;;;;; number 2 > 10 --> false;;;;;; number2 < number1 --> false
+    //true || false || false --> true
+    cout<<"The result of check_or is "<<check_or<< endl;
+
     cout<<""<< endl;
     return 0;
 }
