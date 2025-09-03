@@ -35,6 +35,7 @@ int main()
     number1 ++;
     cout<< "Updated number1 = " <<number1<< endl;
     cout<<"-----------------------------------------------"<<endl;
+
     cout<< "Original number2 = " <<number2<< endl;
     number2 --;
     cout<< "Updated number2 = " <<number2<< endl;
@@ -42,9 +43,19 @@ int main()
     cout<< "Updated number2 = " <<number2<< endl;
     number1*=2;
     cout<< "Updated number1 = " <<number1<< endl;
+    cout<<"-----------------------------------------------"<<endl;
+
+    cout<<"The value of number1 is " <<number1<< " and the value of number2 is " <<number2<< endl; 
+    number1 %= number2;
+    cout<< "After %= operation, the value of number1 is " <<number1<< endl;
+    cout<< "After %= operation, the value of number2 is " <<number2<< endl;
     cout<<""<< endl;
-
-
+    
+    cout <<"------- Example 3: Comparison Operators -------" << endl;
+    cout<<"Is number 1 equal to number2? " << (number1 == number2) << endl;
+    cout<<"Is number1 greater than number2? "<< (number1 > number2)<<endl;
+    cout<<"Is number1 less than number2? " <<(number1 < number2)<<endl;
+    cout<<"Is number1 not equal to number2? " << (number1 != number2)<< endl;
     cout<<""<< endl;
     return 0;
 }
