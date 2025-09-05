@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-    /*
+    
     
     cout<< "------- Example 1: Arithmetic Operators -------" << endl;
     //set number format
@@ -70,7 +70,7 @@ int main()
     //true || false || false --> true
     cout<<"The result of check_or is "<<check_or<< endl;
     cout <<""<< endl;
-    */
+    
 
     cout <<"------- Example 5: Casting -------" << endl;
     int n = 5;
