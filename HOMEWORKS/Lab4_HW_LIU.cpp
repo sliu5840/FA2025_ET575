@@ -25,5 +25,22 @@ using namespace std;
 int main()
 {
     string variable = "word";
+    cout << "Please type a word: "<<endl;
+    cin >>variable;
 
+    cout << "The 2nd character is: "<<variable[1]<<endl;
+    cout<<""<<endl;
+
+    int varlength = variable.length();
+    cout <<"Message has: "<<varlength<<" characters."<<endl;
+    cout<<""<<endl;
+
+    variable.replace(3, 2, "-- $ --");
+    cout<<"Replace message: "<<variable<<endl;
+    cout<<""<<endl;
+
+    variable.erase(varlength+5, 3);
+    cout<<"Remove end message: " <<variable <<endl;
+    cout<<""<<endl;
+    return 0;
 }
