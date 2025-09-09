@@ -39,8 +39,12 @@ int main()
     cout<<"Replace message: "<<variable<<endl;
     cout<<""<<endl;
 
-    variable.erase(varlength+5, 3);
-    cout<<"Remove end message: " <<variable <<endl;
+    string len2 = "-- $ --";
+    int finallength = int(len2.length()) + (varlength-2);
+    cout <<"final message has: "<<finallength<<" characters."<<endl;
+
+    variable.erase(finallength, finallength-=3);
+    cout<<"Remove 3 characters from end of message: " <<variable <<endl;
     cout<<""<<endl;
     return 0;
 }
