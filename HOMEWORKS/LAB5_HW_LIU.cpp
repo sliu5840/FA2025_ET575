@@ -44,14 +44,11 @@ int main(){
 
     //calculate grade = final_exam *0.5 + labs*0.3 + homework*0.2
     grade = final*0.5 + labs*0.3 + homework*0.2;
-    int frade = 0;
-    frade = grade 
     cout<<"Your final numerical grade is "<<grade<<endl;
     cout<<""<<endl;
 
     //multiway statement 
-    if ( frade >=90 || frade =100){
-
+    if ( grade >=90 || grade ==100){
     }
     //print result A final grade of ______ is equivalent to a GPA of _____
 
