@@ -30,6 +30,7 @@ int main(){
     float labs = 0;
     float homework = 0;
     float grade = 0;
+    string GPA = "Z";
 
     //collect values
     cout<<"Enter your final exam grade (0-100): "<<endl;
@@ -45,14 +46,29 @@ int main(){
     //calculate grade = final_exam *0.5 + labs*0.3 + homework*0.2
     grade = final*0.5 + labs*0.3 + homework*0.2;
     cout<<"Your final numerical grade is "<<grade<<endl;
+    int grade1 = int (grade); 
     cout<<""<<endl;
 
     //multiway statement 
-    if ( grade >=90 || grade ==100){
+    if ( 100 >= grade1 && grade1 >= 90){
+        GPA = "A";
     }
-    //print result A final grade of ______ is equivalent to a GPA of _____
-
-    cout <<""<<endl;
-
+    else if ( 89 >= grade1 && grade1 >= 80){
+        GPA ="B";
+    }
+    else if ( 79 >= grade1 && grade1 >= 70){
+        GPA = "C";
+    }
+    else if ( 69 >= grade1 && grade1>= 60){
+        GPA = "D";
+    }
+    else if ( grade1 <= 59){
+        GPA = "F";
+    }
+    else {
+        GPA = "n/a ";
+    }
+    cout <<"A final grade of "<< grade<<" is equivalent to a GPA of "<< GPA <<endl;
     return 0;
+
 }
