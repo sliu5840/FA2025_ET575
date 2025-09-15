@@ -17,8 +17,39 @@ concatenated message:     _____
 Message length:              _____                           
 Index of character 'ma':     _____  
 Replace 'ma' with %---%:     _____ 
+*/
 
+#include <iostream>
+#include <string>
+using namespace std;
 
+int main() {
+    cout<<"------------------------------ RESULT ACTIVITY 1 ----------------------------"<<endl;
+    string name;
+    cout<<"Enter your name: ";
+    cin>>name;
+    string v1 = "Welcome to ";
+    string v2 = "New York City, ";
+    cout<< v1 + v2 + name << "!"<<endl;
+    string line = (v1 + v2 + name + "!");
+
+    int len1 = (v1 + v2 + name + "!").length();
+    cout<<"Message length is "<<len1<<endl;
+    cout<<""<<endl;
+
+    int ind1 = (v1 + v2 + name + "!").find("ma");
+    cout<<"Index of character is "<< ind1<<endl;
+    cout<<""<<endl;
+
+    if (ind1 == 1){
+        line.replace(ind1, 2, "%---%");
+        cout<<"Replace 'ma' with %---% is "<< line <<endl;
+    }
+    else{
+        cout<<"Could not find 'ma', therefore cannot replace."<<endl;
+    }
+    cout<<""<<endl;
+/*
 Procedure: Create a C++  program that:
 
 Step 1) sets variable pi as a constant with initial value of 3.14159
@@ -43,31 +74,27 @@ Step 6) Is the radius not equal to and greater than height ? 0
 Step 7) The volume of a right cylinder with radius 14.8cm and height 25.5cm is = 17547.5cm^3
 */
 
-#include <iostream>
-#include <string>
-using namespace std;
+    cout<<"\n------------------------------ RESULT ACTIVITY 2 ----------------------------"<<endl;
+    float pi = 3.14159;
+    cout<<""<<endl;
+    float height;
+    float radius;
 
-int main() {
-    string name;
-    cout<<"Enter your name: ";
-    cin>>name;
-    string v1 = "Welcome to ";
-    string v2 = "New York City, ";
-    cout<< v1 + v2 + name << "!"<<endl;
-    string line = (v1 + v2 + name + "!");
-
-    int len1 = (v1 + v2 + name + "!").length();
-    cout<<"Message length is "<<len1<<endl;
+    cout<<"Enter the radius: "<<endl;
+    cin>>radius;
+    cout<<""<<endl;
+    cout<<"Enter the height: "<<endl;
+    cin>>height;
     cout<<""<<endl;
 
-    int ind1 = (v1 + v2 + name + "!").find("ma");
-    cout<<"Index of character is "<< ind1<<endl;
-    cout<<""<<endl;
+    cout<<"Is the radius greater than height? "<< (radius> height) <<endl;
+    cout<<"Is the radius equal to height? "<< (radius == height) <<endl;
+    cout<<"Triple the height is : "<< (height *=3) <<endl;
+    cout<<"Increase the radius by 5 : "<< (radius +=5) <<endl;
+    cout<<"Is the radius NOT greater OR equal to the height? " << (radius>height || radius==height)<<endl;
 
-    line.replace(ind1, 2, "%---%");
-    cout<<"Replace 'ma' with %---% is "<< line <<endl;
-    cout<<""<<endl;
-
+    float volume1 = pi * (radius*radius) * (height);
+    cout<<"The volume of a right cylinder with a radius of "<< radius <<" cm and a height of "<< height << " is = "<< volume1<< " cm^3"<<endl;
     return 0;
     cout<<""<<endl;
 }
