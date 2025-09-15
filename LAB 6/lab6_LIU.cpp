@@ -149,9 +149,19 @@ int main() {
     }
     cout<<""<<endl;
     cout<<""<<endl;
-    cout<<"------------LAB 6 AFTER CLASS HW ASSIGNMENT------------"<<endl;
+    cout<<"------------LAB 6 AFTER CLASS HW ASSIGNMENT EXERCISE 1:------------"<<endl;
+    int amt;
+    cout<<"Please enter the amount of money in your savings: "<<endl;
+    cin>>amt;
+    
+    if (amt<199999 && amt > 0){
+        cout<<"Keep Saving!"<<endl;
+    }
+    else if;
 
     cout<<""<<endl;
 
+
+    cout<<""<<endl;
     return 0;
 }
