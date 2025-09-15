@@ -66,7 +66,33 @@ int main()
     int index_soup = msg.find("Soup");
     cout<<"The index of Soup = "<< index_soup <<endl;
     cout<<""<<endl;
-    
+    cout<<""<<endl;
+    cout<<""<<endl;
+    cout<<""<<endl;
+
+    cout<<"--------STRINGS: lab assignemt (AFTER CLASS) HW--------"<<endl;
+    cout<<""<<endl;
+    string variable = "word";
+    cout << "Please type a word: "<<endl;
+    cin >>variable;
+
+    cout << "The 2nd character is: "<<variable[1]<<endl;
+    cout<<""<<endl;
+
+    int varlength = variable.length();
+    cout <<"Message has: "<<varlength<<" characters."<<endl;
+    cout<<""<<endl;
+
+    variable.replace(3, 2, "-- $ --");
+    cout<<"Replace message: "<<variable<<endl;
+    cout<<""<<endl;
+
+    string len2 = "-- $ --";
+    int finallength = int(len2.length()) + (varlength-2);
+    cout <<"final message has: "<<finallength<<" characters."<<endl;
+
+    variable.erase(finallength, finallength-=3);
+    cout<<"Remove 3 characters from end of message: " <<variable <<endl;
     cout<<""<<endl;
     return 0;
 }
