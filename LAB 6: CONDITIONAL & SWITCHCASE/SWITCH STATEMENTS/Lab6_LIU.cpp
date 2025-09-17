@@ -8,7 +8,6 @@ LAB 6:
 using namespace std;
 
 int main() {
-    /*
     cout<<"-------Example 1: nested conditional statement-------"<<endl;
     int n = -8;
     if (n>0){
@@ -58,7 +57,7 @@ int main() {
     else{
         cout<<"The integers are all equal"<<endl;
     }
-    
+    */
 
     //check but with condensing!!!!
 
@@ -150,64 +149,19 @@ int main() {
     }
     cout<<""<<endl;
     cout<<""<<endl;
-    */
-    
     cout<<"------------LAB 6 AFTER CLASS HW ASSIGNMENT EXERCISE 1:------------"<<endl;
     int amt;
     cout<<"Please enter the amount of money in your savings: "<<endl;
     cin>>amt;
-    cout<<""<<endl;
     
-    if (amt<=199999 && amt > 0){
+    if (amt<199999 && amt > 0){
         cout<<"Keep Saving!"<<endl;
     }
-    else if (amt>= 200000 && amt<=500000){
-        if (amt >= 200000 && amt <= 300000)
-        cout<<"You can get a studio."<<endl;
-        else if (amt >= 300001 &&  amt <= 400000)
-        cout<<"You can get an apartment or condo with 1br and 1 bath"<<endl;
-        else if (amt >= 400001 &&  amt <= 500000)
-        cout<<"You can get an apartment or condo with 2br and 2 bath"<<endl;
-    }
-    else if (amt>= 500001 && amt<=1000000){
-        if (amt >= 500001 && amt <= 700000)
-        cout<<"You can get a house with 2br and 2 bath"<<endl;
-        else if (amt >= 700001 && amt <= 1000000)
-        cout<<"You can get a house with 3br and 3 bath"<<endl;
-    }
-    else if (amt>= 1000001){
-        cout<<"Mansion!!"<<endl;
-    }
-    else if (amt<=0){
-        cout<<"Have some savings!"<<endl;
-    }
-    cout<<""<<endl;
+    else if;
+
     cout<<""<<endl;
 
-    cout<<"------------LAB 6 AFTER CLASS HW ASSIGNMENT EXERCISE 2:------------"<<endl;
-    float num1;
-    cout<<"Please enter a number: "<<endl;
-    cin >> num1;
-    cout<<""<<endl;
 
-    char ans;
-    cout<<"Would you like to double the number? Y or N: ";
-    cin>>ans;
-    cout<<""<<endl;
-
-    switch (ans)
-    {
-    case 'y' : case 'Y':
-        num1 = num1 *=2;
-        cout <<"The number is now set to "<< num1 <<endl;
-        break;
-    case 'n': case 'N':
-        cout <<"The number is still set to "<< num1 <<endl;
-        break;
-    default:
-        num1 = 0;
-        cout <<"The number is now set to "<< num1 <<endl;
-    }
     cout<<""<<endl;
     return 0;
 }
