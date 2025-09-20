@@ -10,7 +10,6 @@ using namespace std;
 
 int main(){
     cout<<"\n-------Example 3: Switch Statements-------"<<endl;
-/*
     //select day off using switch case statement
     int dayoff;
     cout<<"select a day-off: "<<endl;
@@ -73,8 +72,7 @@ int main(){
     cout<<""<<endl;
     cout<<""<<endl;
     cout<<""<<endl;
-
-*/
+    
     cout<<"--------------------LAB 7 EXERCISE--------------------"<<endl;
     cout<<""<<endl;
 
