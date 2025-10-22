@@ -82,6 +82,7 @@ int main()
     cout<<""<<endl;
 
     cout<<""<<endl;
+    
     cout<<"--------OPERATIONS: lab assignemt (AFTER CLASS) HW--------"<<endl;
     cout<<""<<endl;
     cout<< "Plese enter an integer for variable A: ";
