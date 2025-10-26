@@ -30,15 +30,16 @@ FUNCTION TO CALCULATE THE DISTANCE OF FOUR POINT
 FUNCTION TO PRINT THE RESULT
 
 */
-float posnum(float number){
-    while (number >0){
+int posnum(int number){
+    while (number <= 0){
         cout<<"Please enter a number greater than 0: "<<endl;
         cin>>number;
-        return number;
     }
+    return number;
+}
 
-double dist(float x1, float x2, float y1, float y2){
-    return sqrt(pow(x2 - x1, 2) + pow(y2-y1), 2);
+float dist(float x1, float x2, float y1, float y2){
+    return sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
 }
 
 void printdist(float x1, float x2, float y1, float y2, float dist){

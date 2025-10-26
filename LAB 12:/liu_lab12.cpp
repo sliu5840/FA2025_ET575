@@ -39,12 +39,12 @@ int main(){
 
     cout<<"------------------LAB 12 EXERCISE------------------"<<endl;
     //create functions to calculate distance between four points
-    float x1 = posnum(-7);
-    float y1 = posnum(2);
-    float x2 = posnum(4);
-    float y2 = posnum(3);
+    float x1 = posnum(0);
+    float y1 = posnum(0);
+    float x2 = posnum(0);
+    float y2 = posnum(0);
 
-    double distance = dist(x1, x2, y1, y2);
+    float distance = dist(x1, x2, y1, y2);
     printdist(x1, x2, y1, y2, distance);
     cout<<""<<endl;
     return 0;
