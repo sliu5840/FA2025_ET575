@@ -11,6 +11,8 @@ Date: October 27th, 2025
 
 using namespace std;
 int main(){
+
+    
     cout<<"-------------Example 1: Random Number Generator-------------"<<endl;
     cout<<"Random number: "<<random_number()<<endl;
     cout<<""<<endl;
