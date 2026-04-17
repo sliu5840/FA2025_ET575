@@ -57,11 +57,12 @@ void printaddress(string* v){
 //example 5: Loop in an array
 void looparray(){
     string names[] = {"Annie", "Peter", "Carl", "charles", "Brian"};
-    int sizenames = sizeof(names/sizeof(names[0]));
+    int sizenames = sizeof(names)/sizeof(names[0]);
     for(int i = 0; i<sizenames; i++){
         cout<<names[i]<<"\t"<<endl;
         //count how many names has 5+ chars
         if (names[i].length() >=5){
+            coy
             counter++;
         }
     }
@@ -72,10 +73,10 @@ void looparray(){
 //Exercise
 void exercise(){
     //declare an array w/ 5 values
-    int score[5];
+    int scores[5];
     
     //assigning/accessing individual cells in an array
-    scorres[0] = 60;
+    scores[0] = 60;
     scores[1] = 30;
     scores[2] = 75;
     scores[3] = 79;
